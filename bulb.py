@@ -158,6 +158,9 @@ def apply(state):
 # ---------- main ----------
 
 def main():
+    if not os.environ.get("GOVEE_API_KEY"):
+        print("No GOVEE_API_KEY secret yet - skipping until the bulb is set up.")
+        return
     now = dt.datetime.now(dt.timezone.utc)
     try:
         generated, events = load_events()
