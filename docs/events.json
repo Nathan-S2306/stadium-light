@@ -1,0 +1,486 @@
+{
+ "generated": "2026-11-03T20:37:14+00:00",
+ "generated_ts": 1793738234,
+ "events": [
+  {
+   "name": "Papa Roach - Rise of the Roach",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1793988000,
+   "end": 1794000600,
+   "start_local": "Fri 06 Nov 18:00",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "The Script - The Man In The Arena Tour",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1794076200,
+   "end": 1794088800,
+   "start_local": "Sat 07 Nov 18:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Stevie Wonder: Songs In The Key of Life Performances",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1794166200,
+   "end": 1794178800,
+   "start_local": "Sun 08 Nov 19:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Muse - The Wow! Signal Europa Tour",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1794511800,
+   "end": 1794524400,
+   "start_local": "Thu 12 Nov 19:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Muse - The Wow! Signal Europa Tour",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1794598200,
+   "end": 1794610800,
+   "start_local": "Fri 13 Nov 19:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Paul Heaton",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1794684600,
+   "end": 1794697200,
+   "start_local": "Sat 14 Nov 19:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Myles Smith: My Mess, My Heart, My Life. Tour",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1794771000,
+   "end": 1794783600,
+   "start_local": "Sun 15 Nov 19:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Enter Shikari - LOSE YOUR SELF TOUR 2026",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1795113000,
+   "end": 1795125600,
+   "start_local": "Thu 19 Nov 18:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Good Charlotte - Motel Du Cap EU/UK Tour",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1795199400,
+   "end": 1795212000,
+   "start_local": "Fri 20 Nov 18:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Man City v Fulham",
+   "venue": "Etihad Stadium",
+   "type": "football",
+   "start": 1795264200,
+   "end": 1795271400,
+   "start_local": "Sat 21 Nov 12:30",
+   "tbc": false,
+   "source": "football-data"
+  },
+  {
+   "name": "Hits Radio Live",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1795287600,
+   "end": 1795300200,
+   "start_local": "Sat 21 Nov 19:00",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "DON TOLIVER: NITROUS - OCTANE WORLD TOUR LEG 2",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1795372200,
+   "end": 1795384800,
+   "start_local": "Sun 22 Nov 18:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Man City v Napoli",
+   "venue": "Etihad Stadium",
+   "type": "football",
+   "start": 1795550400,
+   "end": 1795557600,
+   "start_local": "Tue 24 Nov 20:00",
+   "tbc": false,
+   "source": "football-data"
+  },
+  {
+   "name": "Phoebe Bridgers",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1795717800,
+   "end": 1795730400,
+   "start_local": "Thu 26 Nov 18:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Jungle",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1795804200,
+   "end": 1795816800,
+   "start_local": "Fri 27 Nov 18:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Blossoms",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1795890600,
+   "end": 1795903200,
+   "start_local": "Sat 28 Nov 18:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Man City v Leeds United",
+   "venue": "Etihad Stadium",
+   "type": "football",
+   "start": 1796239800,
+   "end": 1796247000,
+   "start_local": "Wed 02 Dec 19:30",
+   "tbc": false,
+   "source": "football-data"
+  },
+  {
+   "name": "Mariah Carey",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1796239800,
+   "end": 1796252400,
+   "start_local": "Wed 02 Dec 19:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Bryson Tiller Presents: The Neo Trapsoul Tour",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1796322600,
+   "end": 1796335200,
+   "start_local": "Thu 03 Dec 18:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Placebo - 30th Anniversary Tour",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1796409000,
+   "end": 1796421600,
+   "start_local": "Fri 04 Dec 18:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Jessie Ware: The Superbloom Tour 2026",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1796495400,
+   "end": 1796508000,
+   "start_local": "Sat 05 Dec 18:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "UB40 Feat Ali Campbell: The Big Love Tour",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1796580000,
+   "end": 1796592600,
+   "start_local": "Sun 06 Dec 18:00",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "THE KEHLANI WORLD TOUR: EU & UK",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1796929200,
+   "end": 1796941800,
+   "start_local": "Thu 10 Dec 19:00",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Blossoms",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1797013800,
+   "end": 1797026400,
+   "start_local": "Fri 11 Dec 18:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "The Lord of The Rings: The Fellowship of The Ring In Concert",
+   "venue": "Co-op Live",
+   "type": "other",
+   "start": 1797080400,
+   "end": 1797091200,
+   "start_local": "Sat 12 Dec 13:00",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Man City v Chelsea",
+   "venue": "Etihad Stadium",
+   "type": "football",
+   "start": 1797096600,
+   "end": 1797103800,
+   "start_local": "Sat 12 Dec 17:30",
+   "tbc": false,
+   "source": "football-data"
+  },
+  {
+   "name": "The Lord of The Rings: The Fellowship of The Ring In Concert",
+   "venue": "Co-op Live",
+   "type": "other",
+   "start": 1797102000,
+   "end": 1797112800,
+   "start_local": "Sat 12 Dec 19:00",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Jamie T",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1797616800,
+   "end": 1797629400,
+   "start_local": "Fri 18 Dec 18:00",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Man City v Hull City",
+   "venue": "Etihad Stadium",
+   "type": "football",
+   "start": 1797692400,
+   "end": 1797699600,
+   "start_local": "Sat 19 Dec 15:00",
+   "tbc": false,
+   "source": "football-data"
+  },
+  {
+   "name": "Kasabian: Nothing Better Than This Tour 2026",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1797708600,
+   "end": 1797721200,
+   "start_local": "Sat 19 Dec 19:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Jack Whitehall: Bad Influence",
+   "venue": "Co-op Live",
+   "type": "other",
+   "start": 1798920000,
+   "end": 1798930800,
+   "start_local": "Sat 02 Jan 20:00",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Man City v Tottenham",
+   "venue": "Etihad Stadium",
+   "type": "football",
+   "start": 1798993800,
+   "end": 1799001000,
+   "start_local": "Sun 03 Jan 16:30",
+   "tbc": false,
+   "source": "football-data"
+  },
+  {
+   "name": "Man City v Nottingham",
+   "venue": "Etihad Stadium",
+   "type": "football",
+   "start": 1800111600,
+   "end": 1800118800,
+   "start_local": "Sat 16 Jan 15:00",
+   "tbc": false,
+   "source": "football-data"
+  },
+  {
+   "name": "NBA Manchester Game 2027",
+   "venue": "Co-op Live",
+   "type": "sport",
+   "start": 1800199800,
+   "end": 1800208800,
+   "start_local": "Sun 17 Jan 15:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "WWE: FRIDAY NIGHT SMACKDOWN",
+   "venue": "Co-op Live",
+   "type": "sport",
+   "start": 1800644400,
+   "end": 1800653400,
+   "start_local": "Fri 22 Jan 19:00",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Electric Callboy",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1800727200,
+   "end": 1800739800,
+   "start_local": "Sat 23 Jan 18:00",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Donny Osmond - VIVA UK",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1800819000,
+   "end": 1800831600,
+   "start_local": "Sun 24 Jan 19:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Man City v Sporting CP",
+   "venue": "Etihad Stadium",
+   "type": "football",
+   "start": 1801080000,
+   "end": 1801087200,
+   "start_local": "Wed 27 Jan 20:00",
+   "tbc": false,
+   "source": "football-data"
+  },
+  {
+   "name": "Man City v Arsenal",
+   "venue": "Etihad Stadium",
+   "type": "football",
+   "start": 1801321200,
+   "end": 1801328400,
+   "start_local": "Sat 30 Jan 15:00",
+   "tbc": false,
+   "source": "football-data"
+  },
+  {
+   "name": "Nothing But Thieves",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1802460600,
+   "end": 1802473200,
+   "start_local": "Fri 12 Feb 19:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Charli xcx - Music, Fashion, Film Tour",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1802892600,
+   "end": 1802905200,
+   "start_local": "Wed 17 Feb 19:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Man City v Newcastle",
+   "venue": "Etihad Stadium",
+   "type": "football",
+   "start": 1803135600,
+   "end": 1803142800,
+   "start_local": "Sat 20 Feb 15:00",
+   "tbc": false,
+   "source": "football-data"
+  },
+  {
+   "name": "Man City v Everton",
+   "venue": "Etihad Stadium",
+   "type": "football",
+   "start": 1804104000,
+   "end": 1804111200,
+   "start_local": "Wed 03 Mar 20:00",
+   "tbc": false,
+   "source": "football-data"
+  },
+  {
+   "name": "Man City v Man United",
+   "venue": "Etihad Stadium",
+   "type": "football",
+   "start": 1805554800,
+   "end": 1805562000,
+   "start_local": "Sat 20 Mar 15:00",
+   "tbc": false,
+   "source": "football-data"
+  },
+  {
+   "name": "Man City v Crystal Palace",
+   "venue": "Etihad Stadium",
+   "type": "football",
+   "start": 1807970400,
+   "end": 1807977600,
+   "start_local": "Sat 17 Apr 15:00",
+   "tbc": false,
+   "source": "football-data"
+  },
+  {
+   "name": "Man City v Brentford",
+   "venue": "Etihad Stadium",
+   "type": "football",
+   "start": 1809180000,
+   "end": 1809187200,
+   "start_local": "Sat 01 May 15:00",
+   "tbc": false,
+   "source": "football-data"
+  },
+  {
+   "name": "Man City v Liverpool",
+   "venue": "Etihad Stadium",
+   "type": "football",
+   "start": 1809784800,
+   "end": 1809792000,
+   "start_local": "Sat 08 May 15:00",
+   "tbc": false,
+   "source": "football-data"
+  },
+  {
+   "name": "Man City v Aston Villa",
+   "venue": "Etihad Stadium",
+   "type": "football",
+   "start": 1811080800,
+   "end": 1811088000,
+   "start_local": "Sun 23 May 15:00",
+   "tbc": false,
+   "source": "football-data"
+  }
+ ]
+}
