@@ -1,0 +1,4 @@
+{
+  "_help": "Add events the APIs miss (e.g. FA Cup / League Cup home games). Times are UK local. Example: {\"name\": \"Man City v Arsenal (FA Cup)\", \"venue\": \"Etihad Stadium\", \"type\": \"football\", \"start\": \"2027-01-10 15:00\", \"duration_hours\": 2}",
+  "events": []
+}
