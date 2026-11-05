@@ -132,7 +132,7 @@ def find_bulb():
         if "colorRgb" in caps and "powerSwitch" in caps:
             print(f"Using {d.get('deviceName')!r}")
             return d["sku"], d["device"]
-    sys.exit("No colour-capable Govee bulb found on this account.")
+    return None, None
 
 
 def send(sku, device, ctype, instance, value):
@@ -146,13 +146,17 @@ def send(sku, device, ctype, instance, value):
 
 def apply(state):
     sku, device = find_bulb()
+    if not device:
+        print("No colour bulb on the Govee account yet - add it in the Govee Home app. Skipping.")
+        return False
     if state["power"] == 0:
         send(sku, device, "devices.capabilities.on_off", "powerSwitch", 0)
-        return
+        return True
     r, g, b = state["rgb"]
     send(sku, device, "devices.capabilities.on_off", "powerSwitch", 1)
     send(sku, device, "devices.capabilities.color_setting", "colorRgb", (r << 16) + (g << 8) + b)
     send(sku, device, "devices.capabilities.range", "brightness", int(state["brightness"]))
+    return True
 
 
 # ---------- main ----------
@@ -177,7 +181,8 @@ def main():
         print("No change; leaving the bulb alone.")
         return
 
-    apply(state)
+    if not apply(state):
+        return
     STATE_FILE.parent.mkdir(exist_ok=True)
     STATE_FILE.write_text(json.dumps(
         {"mode": mode, "reason": reason, "state": state,
