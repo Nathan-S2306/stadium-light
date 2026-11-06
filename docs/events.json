@@ -1,7 +1,17 @@
 {
- "generated": "2026-11-06T20:56:28+00:00",
- "generated_ts": 1793998588,
+ "generated": "2026-11-06T21:26:25+00:00",
+ "generated_ts": 1794000385,
  "events": [
+  {
+   "name": "Papa Roach - Rise of the Roach",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1793988000,
+   "end": 1794000600,
+   "start_local": "Fri 06 Nov 18:00",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
   {
    "name": "The Script - The Man In The Arena Tour",
    "venue": "Co-op Live",
