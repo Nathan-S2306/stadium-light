@@ -108,7 +108,7 @@ def ticketmaster_events(now):
     key = os.environ.get("TICKETMASTER_API_KEY")
     if not key:
         raise RuntimeError("TICKETMASTER_API_KEY not set")
-    start = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+    start = (now - dt.timedelta(hours=12)).strftime("%Y-%m-%dT%H:%M:%SZ")
     end = (now + dt.timedelta(days=DAYS_AHEAD)).strftime("%Y-%m-%dT%H:%M:%SZ")
     events, page = [], 0
     while True:
@@ -136,7 +136,7 @@ def man_city_home_matches():
     if not key:
         raise RuntimeError("FOOTBALL_DATA_API_KEY not set")
     data = http_json(
-        f"https://api.football-data.org/v4/teams/{MAN_CITY_ID}/matches?status=SCHEDULED,TIMED",
+        f"https://api.football-data.org/v4/teams/{MAN_CITY_ID}/matches?status=SCHEDULED,TIMED,IN_PLAY,PAUSED,FINISHED",
         headers={"X-Auth-Token": key},
     )
     out = []
@@ -166,14 +166,14 @@ def extra_events():
     return out
 
 
-def previous_events(source):
-    """If a source fails, reuse what it gave us last time."""
+def previous_events(source=None):
+    """Events from the last run: for one source (if it failed), or all of them."""
     path = OUT_DIR / "events.json"
     if not path.exists():
         return []
     out = []
     for e in json.loads(path.read_text()).get("events", []):
-        if e.get("source") == source:
+        if source is None or e.get("source") == source:
             start = dt.datetime.fromtimestamp(e["start"], dt.timezone.utc)
             out.append(make_event(e["name"], e["venue"], e["type"], start,
                                   (e["end"] - e["start"]) / 3600, source, e.get("tbc", False)))
@@ -256,6 +256,8 @@ def main():
         sys.exit(1)   # light will show 'no data' blue if this keeps happening
 
     window_start = now - dt.timedelta(hours=6)
+    # keep anything from last time that has started but not finished (live sources may drop it)
+    collected += [e for e in previous_events() if e["start"] <= now <= e["end"] + dt.timedelta(hours=2)]
     events = dedupe([e for e in collected if e["end"] >= window_start])
     write_outputs(events, now)
     for e in events[:10]:
