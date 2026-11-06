@@ -1,17 +1,7 @@
 {
- "generated": "2026-11-06T13:00:12+00:00",
- "generated_ts": 1793970012,
+ "generated": "2026-11-06T20:56:28+00:00",
+ "generated_ts": 1793998588,
  "events": [
-  {
-   "name": "Papa Roach - Rise of the Roach",
-   "venue": "Co-op Live",
-   "type": "concert",
-   "start": 1793988000,
-   "end": 1794000600,
-   "start_local": "Fri 06 Nov 18:00",
-   "tbc": false,
-   "source": "ticketmaster"
-  },
   {
    "name": "The Script - The Man In The Arena Tour",
    "venue": "Co-op Live",
@@ -431,6 +421,16 @@
    "start_local": "Wed 03 Mar 20:00",
    "tbc": false,
    "source": "football-data"
+  },
+  {
+   "name": "Comedy Tragedy Parody - Dominic Fike In Europe",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1804357800,
+   "end": 1804370400,
+   "start_local": "Sat 06 Mar 18:30",
+   "tbc": false,
+   "source": "ticketmaster"
   },
   {
    "name": "Man City v Man United",
