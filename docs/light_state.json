@@ -1,14 +1,8 @@
 {
- "mode": "today_gig",
- "reason": "Papa Roach - Rise of the Roach in progress",
+ "mode": "idle",
+ "reason": "nothing on today",
  "state": {
-  "power": 1,
-  "rgb": [
-   150,
-   40,
-   255
-  ],
-  "brightness": 40
+  "power": 0
  },
- "changed": "2026-11-06T19:54:58+00:00"
+ "changed": "2026-11-06T21:25:36+00:00"
 }
