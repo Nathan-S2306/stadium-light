@@ -1,8 +1,13 @@
 name: Update light
 
+# GitHub's cron schedule is unreliable on small repos (runs can be hours late),
+# so instead one run stays alive for ~5.5 hours checking the bulb every 4 minutes,
+# then starts the next run itself. The schedule below is only a backup to restart
+# the chain if it ever stops.
+
 on:
   schedule:
-    - cron: "*/10 * * * *"    # every 10 minutes (GitHub may run it a few minutes late)
+    - cron: "7 */3 * * *"
   workflow_dispatch:
     inputs:
       force:
@@ -12,33 +17,50 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
-  group: repo-writes
+  group: light
   cancel-in-progress: false
 
 jobs:
   light:
     runs-on: ubuntu-latest
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Set bulb
-        run: python bulb.py ${{ inputs.force && '--force' || '' }}
+      - name: Keep the bulb up to date
         env:
           GOVEE_API_KEY: ${{ secrets.GOVEE_API_KEY }}
           GOVEE_DEVICE: ${{ secrets.GOVEE_DEVICE }}
           GOVEE_SKU: ${{ secrets.GOVEE_SKU }}
           IDLE_MODE: ${{ vars.IDLE_MODE }}
-      - name: Save bulb state
+          FORCE: ${{ inputs.force }}
         run: |
           git config user.name "events-bot"
           git config user.email "events-bot@users.noreply.github.com"
-          git add docs/light_state.json 2>/dev/null || true
-          if ! git diff --cached --quiet; then
-            git commit -m "Light: $(python -c "import json;print(json.load(open('docs/light_state.json'))['mode'])")"
-            git pull --rebase
-            git push
-          fi
+          end=$((SECONDS + 330 * 60))
+          first=1
+          while [ $SECONDS -lt $end ]; do
+            git pull -q --rebase || true
+            if [ "$first" = 1 ] && [ "$FORCE" = "true" ]; then
+              python bulb.py --force || echo "bulb.py failed, will retry"
+            else
+              python bulb.py || echo "bulb.py failed, will retry"
+            fi
+            first=0
+            git add docs/light_state.json 2>/dev/null || true
+            if ! git diff --cached --quiet; then
+              git commit -q -m "Light: $(python -c "import json;print(json.load(open('docs/light_state.json'))['mode'])")"
+              (git pull -q --rebase && git push -q) || echo "push failed, will retry"
+            fi
+            sleep 240
+          done
+      - name: Start the next run
+        if: ${{ !cancelled() }}
+        run: gh workflow run update-light.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}
