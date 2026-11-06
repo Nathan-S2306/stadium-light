@@ -1,8 +1,14 @@
 {
- "mode": "idle",
- "reason": "nothing on today",
+ "mode": "rush_out",
+ "reason": "Papa Roach - Rise of the Roach finishing",
  "state": {
-  "power": 0
+  "power": 1,
+  "rgb": [
+   255,
+   0,
+   0
+  ],
+  "brightness": 40
  },
- "changed": "2026-11-06T21:25:36+00:00"
+ "changed": "2026-11-06T21:29:39+00:00"
 }
