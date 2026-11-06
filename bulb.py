@@ -42,7 +42,7 @@ RUSH_BEFORE_END = dt.timedelta(minutes=30)
 RUSH_AFTER_END = dt.timedelta(minutes=75)
 STALE_AFTER = dt.timedelta(hours=36)
 NIGHT_START, NIGHT_END = 23, 7          # dim between these hours (UK time)
-DAY_BRIGHTNESS, NIGHT_BRIGHTNESS = 100, 25
+DAY_BRIGHTNESS, NIGHT_BRIGHTNESS = 40, 15
 
 LOOKS = {   # mode -> (r, g, b, brightness %)   brightness None = use day/night level
     "rush_out":   (255, 0, 0, None),
