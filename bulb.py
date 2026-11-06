@@ -9,8 +9,8 @@ next change.
 
 Colours
   Off (or faint warm glow)  nothing on today
-  Sky blue                  Man City home game later today
-  Purple                    concert / show later today
+  Sky blue                  Man City home game later today or in progress
+  Purple                    concert / show later today or in progress
   Amber                     traffic building: 3h before start until start
   Red                       crowds leaving: 30 min before end until 75 min after
   Dim white                 event data is over 36h old (something's broken)
@@ -79,6 +79,11 @@ def decide(now, generated, events):
     for e in sorted(events, key=lambda e: e["start"]):
         if e["end"] - RUSH_BEFORE_END <= now <= e["end"] + RUSH_AFTER_END:
             return "rush_out", f"{e['name']} finishing"
+        if e["start"] <= now < e["end"] - RUSH_BEFORE_END:
+            if best[0] != "rush_in":
+                mode = "today_city" if e["football"] else "today_gig"
+                best = (mode, f"{e['name']} in progress")
+            continue
         if e["start"] - RUSH_BEFORE_START <= now < e["start"]:
             if best[0] != "rush_in":
                 best = ("rush_in", f"{e['name']} starts {e['start'].astimezone(UK):%H:%M}")
