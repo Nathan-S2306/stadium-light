@@ -1,8 +1,14 @@
 {
- "mode": "idle",
- "reason": "nothing on today",
+ "mode": "today_gig",
+ "reason": "The Script - The Man In The Arena Tour at 18:30",
  "state": {
-  "power": 0
+  "power": 1,
+  "rgb": [
+   150,
+   40,
+   255
+  ],
+  "brightness": 15
  },
- "changed": "2026-11-06T22:45:46+00:00"
+ "changed": "2026-11-07T00:01:54+00:00"
 }
