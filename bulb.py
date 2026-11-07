@@ -7,13 +7,12 @@ fetch_events.py), works out what the bulb should show right now, and only
 talks to the bulb when that changes, so turning it off by hand sticks until the
 next change.
 
-Colours
-  Off (or faint warm glow)  nothing on today
-  Sky blue                  Man City home game later today or in progress
-  Purple                    concert / show later today or in progress
-  Amber                     traffic building: 3h before start until start
-  Red                       crowds leaving: 30 min before end until 75 min after
-  Dim white                 event data is over 36h old (something's broken)
+Rules
+  Co-op Live (and other concerts/shows):
+    green from 12:00 on the day -> red 2h before start -> green during -> red 1h after
+  Man City home games:
+    sky blue from 4h before kick-off -> red 2h before -> sky blue during -> red 1h after
+  Otherwise off. Dim white = event data over 36h old (something's broken).
 
 Secrets / environment:
   GOVEE_API_KEY   required (request it in the Govee Home app)
@@ -37,21 +36,26 @@ EVENTS_FILE = ROOT / "docs" / "events.json"
 STATE_FILE = ROOT / "docs" / "light_state.json"
 API = "https://openapi.api.govee.com/router/api/v1"
 
-RUSH_BEFORE_START = dt.timedelta(hours=3)
-RUSH_BEFORE_END = dt.timedelta(minutes=30)
-RUSH_AFTER_END = dt.timedelta(minutes=75)
+# Co-op Live (and any other non-football event)
+COOP_GREEN_FROM = dt.time(12, 0)            # green from midday on the day
+COOP_RED_BEFORE = dt.timedelta(hours=2)     # red for 2h before the start
+COOP_RED_AFTER = dt.timedelta(hours=1)      # red for 1h after the end
+# Man City home games
+CITY_BLUE_BEFORE = dt.timedelta(hours=4)    # sky blue from 4h before kick-off
+CITY_RED_BEFORE = dt.timedelta(hours=2)     # red for 2h before kick-off
+CITY_RED_AFTER = dt.timedelta(hours=1)      # red for 1h after the final whistle
 STALE_AFTER = dt.timedelta(hours=36)
 NIGHT_START, NIGHT_END = 23, 7          # dim between these hours (UK time)
 DAY_BRIGHTNESS, NIGHT_BRIGHTNESS = 40, 15
 
 LOOKS = {   # mode -> (r, g, b, brightness %)   brightness None = use day/night level
-    "rush_out":   (255, 0, 0, None),
-    "rush_in":    (255, 110, 0, None),
-    "today_city": (108, 171, 221, None),
-    "today_gig":  (150, 40, 255, None),
+    "red":        (255, 0, 0, None),
+    "city":       (108, 171, 221, None),   # sky blue
+    "coop":       (0, 255, 40, None),      # green
     "stale":      (255, 255, 255, 10),
     "idle_glow":  (255, 140, 60, 8),
 }
+PRIORITY = {"red": 3, "city": 2, "coop": 1}   # if two events overlap, red wins, then blue
 
 
 # ---------- deciding what to show ----------
@@ -70,26 +74,41 @@ def load_events():
     return gen, events
 
 
+def phase(e, now):
+    """What one event wants the light to show right now: (mode, reason) or None."""
+    start, end, name = e["start"], e["end"], e["name"]
+    t = start.astimezone(UK).strftime("%H:%M")
+    if e["football"]:
+        if start - CITY_BLUE_BEFORE <= now < start - CITY_RED_BEFORE:
+            return "city", f"{name}: kick-off {t}"
+        if start - CITY_RED_BEFORE <= now < start:
+            return "red", f"{name}: crowds arriving, kick-off {t}"
+        if start <= now < end:
+            return "city", f"{name}: match on"
+        if end <= now < end + CITY_RED_AFTER:
+            return "red", f"{name}: crowds leaving"
+        return None
+    midday = dt.datetime.combine(start.astimezone(UK).date(), COOP_GREEN_FROM, tzinfo=UK)
+    if start - COOP_RED_BEFORE <= now < start:
+        return "red", f"{name}: crowds arriving, starts {t}"
+    if midday <= now < start - COOP_RED_BEFORE:
+        return "coop", f"{name}: starts {t}"
+    if start <= now < end:
+        return "coop", f"{name}: on now"
+    if end <= now < end + COOP_RED_AFTER:
+        return "red", f"{name}: crowds leaving"
+    return None
+
+
 def decide(now, generated, events):
     """Return (mode, reason)."""
     if now - generated > STALE_AFTER:
         return "stale", "event data is out of date"
-    today = now.astimezone(UK).date()
-    best = ("idle", "nothing on today")
+    best = ("idle", "nothing happening")
     for e in sorted(events, key=lambda e: e["start"]):
-        if e["end"] - RUSH_BEFORE_END <= now <= e["end"] + RUSH_AFTER_END:
-            return "rush_out", f"{e['name']} finishing"
-        if e["start"] <= now < e["end"] - RUSH_BEFORE_END:
-            if best[0] != "rush_in":
-                mode = "today_city" if e["football"] else "today_gig"
-                best = (mode, f"{e['name']} in progress")
-            continue
-        if e["start"] - RUSH_BEFORE_START <= now < e["start"]:
-            if best[0] != "rush_in":
-                best = ("rush_in", f"{e['name']} starts {e['start'].astimezone(UK):%H:%M}")
-        elif best[0] == "idle" and e["start"] > now and e["start"].astimezone(UK).date() == today:
-            mode = "today_city" if e["football"] else "today_gig"
-            best = (mode, f"{e['name']} at {e['start'].astimezone(UK):%H:%M}")
+        p = phase(e, now)
+        if p and PRIORITY[p[0]] > PRIORITY.get(best[0], 0):
+            best = p
     return best
 
 

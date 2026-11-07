@@ -4,16 +4,27 @@ A smart bulb that changes colour when something's on at the Etihad or Co-op Live
 
 ## What the colours mean
 
-| Bulb | Meaning |
-|---|---|
-| Off | Nothing on today |
-| Sky blue | Man City home game later today |
-| Purple | Concert or show later today |
-| Amber | Traffic building: 3 hours before the start |
-| Red | Crowds leaving: 30 min before the end until 75 min after |
-| Very dim white | The event data has gone stale (see Troubleshooting) |
+**Co-op Live** (and any other concert or show)
 
-Between 11pm and 7am it uses 25% brightness instead of full.
+| Time | Bulb |
+|---|---|
+| From 12 midday on the day | Green |
+| 2 hours before the start | Red (crowds arriving) |
+| During the event | Green |
+| 1 hour after it ends | Red (crowds leaving) |
+
+**Man City home games**
+
+| Time | Bulb |
+|---|---|
+| From 4 hours before kick-off | Sky blue |
+| 2 hours before kick-off | Red (crowds arriving) |
+| During the match | Sky blue |
+| 1 hour after the final whistle | Red (crowds leaving) |
+
+At all other times the bulb is **off**. If two events overlap, red wins, then blue. A very dim white light means the event data has gone stale (see Troubleshooting).
+
+Brightness is 40%, dropping to 15% between 11pm and 7am.
 
 ## What to buy
 
