@@ -1,14 +1,14 @@
 {
- "mode": "coop",
- "reason": "The Script - The Man In The Arena Tour: on now",
+ "mode": "red",
+ "reason": "The Script - The Man In The Arena Tour: crowds leaving",
  "state": {
   "power": 1,
   "rgb": [
-   0,
    255,
-   40
+   0,
+   0
   ],
   "brightness": 40
  },
- "changed": "2026-11-07T18:31:59+00:00"
+ "changed": "2026-11-07T22:00:31+00:00"
 }
