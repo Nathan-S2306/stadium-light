@@ -1,8 +1,14 @@
 {
- "mode": "idle",
- "reason": "nothing happening",
+ "mode": "coop",
+ "reason": "The Script - The Man In The Arena Tour: starts 18:30",
  "state": {
-  "power": 0
+  "power": 1,
+  "rgb": [
+   0,
+   255,
+   40
+  ],
+  "brightness": 40
  },
- "changed": "2026-11-07T09:18:52+00:00"
+ "changed": "2026-11-07T12:03:07+00:00"
 }
