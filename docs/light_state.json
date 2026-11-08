@@ -1,14 +1,14 @@
 {
- "mode": "red",
- "reason": "Stevie Wonder: Songs In The Key of Life Performances: crowds arriving, starts 19:30",
+ "mode": "coop",
+ "reason": "Stevie Wonder: Songs In The Key of Life Performances: on now",
  "state": {
   "power": 1,
   "rgb": [
-   255,
    0,
-   0
+   255,
+   40
   ],
   "brightness": 40
  },
- "changed": "2026-11-08T17:31:15+00:00"
+ "changed": "2026-11-08T19:31:37+00:00"
 }
