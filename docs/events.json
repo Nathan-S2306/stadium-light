@@ -1,17 +1,7 @@
 {
- "generated": "2026-11-07T19:28:38+00:00",
- "generated_ts": 1794079718,
+ "generated": "2026-11-08T11:58:57+00:00",
+ "generated_ts": 1794139137,
  "events": [
-  {
-   "name": "The Script - The Man In The Arena Tour",
-   "venue": "Co-op Live",
-   "type": "concert",
-   "start": 1794076200,
-   "end": 1794088800,
-   "start_local": "Sat 07 Nov 18:30",
-   "tbc": false,
-   "source": "ticketmaster"
-  },
   {
    "name": "Stevie Wonder: Songs In The Key of Life Performances",
    "venue": "Co-op Live",
