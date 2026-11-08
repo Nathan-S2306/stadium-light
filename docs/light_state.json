@@ -1,8 +1,14 @@
 {
- "mode": "idle",
- "reason": "nothing happening",
+ "mode": "coop",
+ "reason": "Stevie Wonder: Songs In The Key of Life Performances: starts 19:30",
  "state": {
-  "power": 0
+  "power": 1,
+  "rgb": [
+   0,
+   255,
+   40
+  ],
+  "brightness": 40
  },
- "changed": "2026-11-07T23:00:41+00:00"
+ "changed": "2026-11-08T14:38:57+00:00"
 }
