@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-09T13:58:58+00:00",
- "generated_ts": 1794232738,
+ "generated": "2026-11-09T23:48:05+00:00",
+ "generated_ts": 1794268085,
  "events": [
   {
    "name": "Muse - The Wow! Signal Europa Tour",
@@ -429,6 +429,16 @@
    "start": 1804357800,
    "end": 1804370400,
    "start_local": "Sat 06 Mar 18:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "N-Dubz - The Legacy Tour - In the Round",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1804617000,
+   "end": 1804629600,
+   "start_local": "Tue 09 Mar 18:30",
    "tbc": false,
    "source": "ticketmaster"
   },
