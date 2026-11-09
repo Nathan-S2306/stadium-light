@@ -1,14 +1,8 @@
 {
- "mode": "coop",
- "reason": "Stevie Wonder: Songs In The Key of Life Performances: on now",
+ "mode": "idle",
+ "reason": "nothing happening",
  "state": {
-  "power": 1,
-  "rgb": [
-   0,
-   255,
-   40
-  ],
-  "brightness": 40
+  "power": 0
  },
- "changed": "2026-11-08T19:31:37+00:00"
+ "changed": "2026-11-09T16:17:25+00:00"
 }
