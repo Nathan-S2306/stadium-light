@@ -1,17 +1,7 @@
 {
- "generated": "2026-11-08T19:44:58+00:00",
- "generated_ts": 1794167098,
+ "generated": "2026-11-09T13:58:58+00:00",
+ "generated_ts": 1794232738,
  "events": [
-  {
-   "name": "Stevie Wonder: Songs In The Key of Life Performances",
-   "venue": "Co-op Live",
-   "type": "concert",
-   "start": 1794166200,
-   "end": 1794178800,
-   "start_local": "Sun 08 Nov 19:30",
-   "tbc": false,
-   "source": "ticketmaster"
-  },
   {
    "name": "Muse - The Wow! Signal Europa Tour",
    "venue": "Co-op Live",
@@ -363,6 +353,16 @@
    "source": "football-data"
   },
   {
+   "name": "A Boogie Wit Da Hoodie",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1801247400,
+   "end": 1801260000,
+   "start_local": "Fri 29 Jan 18:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
    "name": "Man City v Arsenal",
    "venue": "Etihad Stadium",
    "type": "football",
@@ -371,6 +371,16 @@
    "start_local": "Sat 30 Jan 15:00",
    "tbc": false,
    "source": "football-data"
+  },
+  {
+   "name": "Songs of Freedom",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1801679400,
+   "end": 1801692000,
+   "start_local": "Wed 03 Feb 18:30",
+   "tbc": false,
+   "source": "ticketmaster"
   },
   {
    "name": "Nothing But Thieves",
