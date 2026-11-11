@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-11T12:46:45+00:00",
- "generated_ts": 1794401205,
+ "generated": "2026-11-11T22:00:13+00:00",
+ "generated_ts": 1794434413,
  "events": [
   {
    "name": "Muse - The Wow! Signal Europa Tour",
@@ -106,9 +106,9 @@
    "name": "Phoebe Bridgers",
    "venue": "Co-op Live",
    "type": "concert",
-   "start": 1795717800,
-   "end": 1795730400,
-   "start_local": "Thu 26 Nov 18:30",
+   "start": 1795716000,
+   "end": 1795728600,
+   "start_local": "Thu 26 Nov 18:00",
    "tbc": false,
    "source": "ticketmaster"
   },
@@ -439,6 +439,16 @@
    "start": 1804617000,
    "end": 1804629600,
    "start_local": "Tue 09 Mar 18:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "N-Dubz - The Legacy Tour - In the Round",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1804789800,
+   "end": 1804802400,
+   "start_local": "Thu 11 Mar 18:30",
    "tbc": false,
    "source": "ticketmaster"
   },
