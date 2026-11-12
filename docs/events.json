@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-12T13:50:05+00:00",
- "generated_ts": 1794491405,
+ "generated": "2026-11-12T21:51:18+00:00",
+ "generated_ts": 1794520278,
  "events": [
   {
    "name": "Muse - The Wow! Signal Europa Tour",
@@ -373,6 +373,16 @@
    "source": "football-data"
   },
   {
+   "name": "A Boogie Wit Da Hoodie",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1801420200,
+   "end": 1801432800,
+   "start_local": "Sun 31 Jan 18:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
    "name": "Songs of Freedom",
    "venue": "Co-op Live",
    "type": "concert",
@@ -449,6 +459,16 @@
    "start": 1804789800,
    "end": 1804802400,
    "start_local": "Thu 11 Mar 18:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "RUSH: Fifty Something Tour",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1804879800,
+   "end": 1804892400,
+   "start_local": "Fri 12 Mar 19:30",
    "tbc": false,
    "source": "ticketmaster"
   },
