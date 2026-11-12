@@ -1,8 +1,14 @@
 {
- "mode": "idle",
- "reason": "nothing happening",
+ "mode": "coop",
+ "reason": "Muse - The Wow! Signal Europa Tour: starts 19:30",
  "state": {
-  "power": 0
+  "power": 1,
+  "rgb": [
+   0,
+   255,
+   40
+  ],
+  "brightness": 40
  },
- "changed": "2026-11-09T16:17:25+00:00"
+ "changed": "2026-11-12T16:02:20+00:00"
 }
