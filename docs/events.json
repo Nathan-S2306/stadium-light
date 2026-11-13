@@ -1,17 +1,7 @@
 {
- "generated": "2026-11-12T21:51:18+00:00",
- "generated_ts": 1794520278,
+ "generated": "2026-11-13T13:12:22+00:00",
+ "generated_ts": 1794575542,
  "events": [
-  {
-   "name": "Muse - The Wow! Signal Europa Tour",
-   "venue": "Co-op Live",
-   "type": "concert",
-   "start": 1794511800,
-   "end": 1794524400,
-   "start_local": "Thu 12 Nov 19:30",
-   "tbc": false,
-   "source": "ticketmaster"
-  },
   {
    "name": "Muse - The Wow! Signal Europa Tour",
    "venue": "Co-op Live",
