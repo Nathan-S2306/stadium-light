@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-13T13:12:22+00:00",
- "generated_ts": 1794575542,
+ "generated": "2026-11-13T21:26:50+00:00",
+ "generated_ts": 1794605210,
  "events": [
   {
    "name": "Muse - The Wow! Signal Europa Tour",
@@ -459,6 +459,16 @@
    "start": 1804879800,
    "end": 1804892400,
    "start_local": "Fri 12 Mar 19:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Megadeth - Breakout: Hibernation Of The Nations Europe Tour 2027",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1804966200,
+   "end": 1804978800,
+   "start_local": "Sat 13 Mar 19:30",
    "tbc": false,
    "source": "ticketmaster"
   },
