@@ -1,17 +1,7 @@
 {
- "generated": "2026-11-13T21:26:50+00:00",
- "generated_ts": 1794605210,
+ "generated": "2026-11-14T12:16:02+00:00",
+ "generated_ts": 1794658562,
  "events": [
-  {
-   "name": "Muse - The Wow! Signal Europa Tour",
-   "venue": "Co-op Live",
-   "type": "concert",
-   "start": 1794598200,
-   "end": 1794610800,
-   "start_local": "Fri 13 Nov 19:30",
-   "tbc": false,
-   "source": "ticketmaster"
-  },
   {
    "name": "Paul Heaton",
    "venue": "Co-op Live",
