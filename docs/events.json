@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-14T12:16:02+00:00",
- "generated_ts": 1794658562,
+ "generated": "2026-11-14T19:57:35+00:00",
+ "generated_ts": 1794686255,
  "events": [
   {
    "name": "Paul Heaton",
@@ -459,6 +459,16 @@
    "start": 1804966200,
    "end": 1804978800,
    "start_local": "Sat 13 Mar 19:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "RUSH: Fifty Something Tour",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1805052600,
+   "end": 1805065200,
+   "start_local": "Sun 14 Mar 19:30",
    "tbc": false,
    "source": "ticketmaster"
   },
