@@ -1,14 +1,14 @@
 {
- "mode": "red",
- "reason": "Paul Heaton: crowds arriving, starts 19:30",
+ "mode": "coop",
+ "reason": "Paul Heaton: on now",
  "state": {
   "power": 1,
   "rgb": [
-   255,
    0,
-   0
+   255,
+   40
   ],
   "brightness": 40
  },
- "changed": "2026-11-14T17:31:43+00:00"
+ "changed": "2026-11-14T19:32:05+00:00"
 }
