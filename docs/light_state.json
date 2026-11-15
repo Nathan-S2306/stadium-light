@@ -1,14 +1,14 @@
 {
- "mode": "coop",
- "reason": "Paul Heaton: on now",
+ "mode": "red",
+ "reason": "Myles Smith: My Mess, My Heart, My Life. Tour: crowds arriving, starts 19:30",
  "state": {
   "power": 1,
   "rgb": [
-   0,
    255,
-   40
+   0,
+   0
   ],
   "brightness": 40
  },
- "changed": "2026-11-14T19:32:05+00:00"
+ "changed": "2026-11-15T17:31:36+00:00"
 }
