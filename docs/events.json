@@ -1,17 +1,7 @@
 {
- "generated": "2026-11-14T19:57:35+00:00",
- "generated_ts": 1794686255,
+ "generated": "2026-11-15T12:48:51+00:00",
+ "generated_ts": 1794746931,
  "events": [
-  {
-   "name": "Paul Heaton",
-   "venue": "Co-op Live",
-   "type": "concert",
-   "start": 1794684600,
-   "end": 1794697200,
-   "start_local": "Sat 14 Nov 19:30",
-   "tbc": false,
-   "source": "ticketmaster"
-  },
   {
    "name": "Myles Smith: My Mess, My Heart, My Life. Tour",
    "venue": "Co-op Live",
