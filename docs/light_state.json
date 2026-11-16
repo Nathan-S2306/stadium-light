@@ -1,14 +1,8 @@
 {
- "mode": "coop",
- "reason": "Myles Smith: My Mess, My Heart, My Life. Tour: on now",
+ "mode": "idle",
+ "reason": "nothing happening",
  "state": {
-  "power": 1,
-  "rgb": [
-   0,
-   255,
-   40
-  ],
-  "brightness": 40
+  "power": 0
  },
- "changed": "2026-11-15T19:31:47+00:00"
+ "changed": "2026-11-16T15:48:03+00:00"
 }
