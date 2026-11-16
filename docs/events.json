@@ -1,17 +1,7 @@
 {
- "generated": "2026-11-15T20:25:25+00:00",
- "generated_ts": 1794774325,
+ "generated": "2026-11-16T13:45:11+00:00",
+ "generated_ts": 1794836711,
  "events": [
-  {
-   "name": "Myles Smith: My Mess, My Heart, My Life. Tour",
-   "venue": "Co-op Live",
-   "type": "concert",
-   "start": 1794771000,
-   "end": 1794783600,
-   "start_local": "Sun 15 Nov 19:30",
-   "tbc": false,
-   "source": "ticketmaster"
-  },
   {
    "name": "Enter Shikari - LOSE YOUR SELF TOUR 2026",
    "venue": "Co-op Live",
