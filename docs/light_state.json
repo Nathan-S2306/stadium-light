@@ -1,14 +1,14 @@
 {
- "mode": "coop",
- "reason": "Enter Shikari - LOSE YOUR SELF TOUR 2026: starts 18:30",
+ "mode": "red",
+ "reason": "Enter Shikari - LOSE YOUR SELF TOUR 2026: crowds arriving, starts 18:30",
  "state": {
   "power": 1,
   "rgb": [
-   0,
    255,
-   40
+   0,
+   0
   ],
   "brightness": 40
  },
- "changed": "2026-11-19T16:10:45+00:00"
+ "changed": "2026-11-19T16:31:03+00:00"
 }
