@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-18T22:37:44+00:00",
- "generated_ts": 1795041464,
+ "generated": "2026-11-19T14:29:20+00:00",
+ "generated_ts": 1795098560,
  "events": [
   {
    "name": "Enter Shikari - LOSE YOUR SELF TOUR 2026",
@@ -326,9 +326,9 @@
    "name": "Man City v Arsenal",
    "venue": "Etihad Stadium",
    "type": "football",
-   "start": 1801321200,
-   "end": 1801328400,
-   "start_local": "Sat 30 Jan 15:00",
+   "start": 1801413000,
+   "end": 1801420200,
+   "start_local": "Sun 31 Jan 16:30",
    "tbc": false,
    "source": "football-data"
   },
