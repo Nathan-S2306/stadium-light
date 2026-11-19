@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-19T14:29:20+00:00",
- "generated_ts": 1795098560,
+ "generated": "2026-11-19T22:41:08+00:00",
+ "generated_ts": 1795128068,
  "events": [
   {
    "name": "Enter Shikari - LOSE YOUR SELF TOUR 2026",
@@ -449,6 +449,16 @@
    "start": 1805052600,
    "end": 1805065200,
    "start_local": "Sun 14 Mar 19:30",
+   "tbc": false,
+   "source": "ticketmaster"
+  },
+  {
+   "name": "Chase & Status",
+   "venue": "Co-op Live",
+   "type": "concert",
+   "start": 1805481000,
+   "end": 1805493600,
+   "start_local": "Fri 19 Mar 18:30",
    "tbc": false,
    "source": "ticketmaster"
   },
