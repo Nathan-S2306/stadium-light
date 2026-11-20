@@ -1,17 +1,7 @@
 {
- "generated": "2026-11-19T22:41:08+00:00",
- "generated_ts": 1795128068,
+ "generated": "2026-11-20T14:06:34+00:00",
+ "generated_ts": 1795183594,
  "events": [
-  {
-   "name": "Enter Shikari - LOSE YOUR SELF TOUR 2026",
-   "venue": "Co-op Live",
-   "type": "concert",
-   "start": 1795113000,
-   "end": 1795125600,
-   "start_local": "Thu 19 Nov 18:30",
-   "tbc": false,
-   "source": "ticketmaster"
-  },
   {
    "name": "Good Charlotte - Motel Du Cap EU/UK Tour",
    "venue": "Co-op Live",
