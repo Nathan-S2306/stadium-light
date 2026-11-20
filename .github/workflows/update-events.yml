@@ -25,6 +25,12 @@ jobs:
         env:
           TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+      - name: Fetch bin dates
+        if: ${{ vars.BIN_UPRN != '' }}
+        continue-on-error: true      # a council hiccup shouldn't stop the event update
+        run: python fetch_bins.py
+        env:
+          BIN_UPRN: ${{ vars.BIN_UPRN }}
       - name: Commit changes
         run: |
           git config user.name "events-bot"

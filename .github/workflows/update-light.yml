@@ -38,6 +38,10 @@ jobs:
           GOVEE_DEVICE: ${{ secrets.GOVEE_DEVICE }}
           GOVEE_SKU: ${{ secrets.GOVEE_SKU }}
           IDLE_MODE: ${{ vars.IDLE_MODE }}
+          GOVEE_BIN_API_KEY: ${{ secrets.GOVEE_BIN_API_KEY }}
+          GOVEE_BIN_DEVICE: ${{ secrets.GOVEE_BIN_DEVICE }}
+          GOVEE_BIN_SKU: ${{ secrets.GOVEE_BIN_SKU }}
+          BIN_UPRN: ${{ vars.BIN_UPRN }}
           FORCE: ${{ inputs.force }}
         run: |
           git config user.name "events-bot"
@@ -48,8 +52,10 @@ jobs:
             git pull -q --rebase || true
             if [ "$first" = 1 ] && [ "$FORCE" = "true" ]; then
               python bulb.py --force || echo "bulb.py failed, will retry"
+              if [ -n "$BIN_UPRN" ]; then python bin_bulb.py --force || echo "bin_bulb.py failed, will retry"; fi
             else
               python bulb.py || echo "bulb.py failed, will retry"
+              if [ -n "$BIN_UPRN" ]; then python bin_bulb.py || echo "bin_bulb.py failed, will retry"; fi
             fi
             first=0
             git add docs/light_state.json 2>/dev/null || true

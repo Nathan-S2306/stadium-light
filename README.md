@@ -94,9 +94,34 @@ That's it. From now on it runs by itself.
 
 ---
 
+## Bin light (second bulb, Kirklees / Huddersfield)
+
+A second Govee bulb that shows which bin goes out, from **5pm the evening before until midday on collection day**. It's off the rest of the time.
+
+| Bin | Bulb |
+|---|---|
+| Grey (general waste) | White |
+| Green (recycling) | Green |
+| Brown (garden waste) | Orange |
+| Two bins on the same day | Swaps between the two colours every few minutes |
+
+Brightness is 60%, dropping to 15% between 11pm and 7am. Collection dates come from the Kirklees "Manage your bins" service twice a day. If that service ever stops answering, the light keeps going by assuming each bin stays on its fortnightly cycle. Bank holiday and Christmas changes come through from the council automatically.
+
+### Setup
+1. Add the second bulb in the **Govee Home** app. If it's on the same Govee account, the existing API key covers it. If it's on a different account (a different house, say), request a key on that account and add it as the secret `GOVEE_BIN_API_KEY`.
+2. Find the property's **UPRN** (Unique Property Reference Number) by searching the postcode on findmyaddress.co.uk or uprn.uk and picking the address.
+3. Go to **Settings → Secrets and variables → Actions → Variables** and add `BIN_UPRN` with that number.
+4. Run **Update events** so it fetches the bin dates; the log lists them.
+5. Run **Update light** with "force" ticked, then open its log. It lists your Govee devices with their `sku` and `device` values. Add the bin bulb's values as the secrets `GOVEE_BIN_SKU` and `GOVEE_BIN_DEVICE`, then run **Update light** with "force" once more. (Skip this step if the bin bulb has its own `GOVEE_BIN_API_KEY` and is the only bulb on that account.)
+
+Times and colours are at the top of `bin_bulb.py` (`SHOW_FROM`, `SHOW_UNTIL`, `LOOKS`).
+
+---
+
 ## Troubleshooting
 
 - **Bulb never changes:** open Actions → Update light → the latest run, and read the log. It prints what it decided ("rush_in: Big Pop Tour starts 19:45") and any error from Govee. The usual causes are a mistyped API key or a Bluetooth-only bulb.
 - **Very dim white:** the event list hasn't updated for 36 hours or more. Check the **Update events** runs for errors, such as an expired API key.
 - **Changes arrive a little late:** GitHub sometimes runs scheduled jobs 5–15 minutes behind. That's fine for a 3-hour warning window.
+- **Bin light never changes:** check the "Fetch bin dates" step in the latest **Update events** run. It prints what the council returned. An empty reply usually means the UPRN is wrong.
 - **Workflows stopped after a couple of months:** GitHub pauses scheduled jobs in repos with no activity for 60 days. The twice-daily event commits normally count as activity, but if it ever happens, click "Enable workflow" in Actions.
