@@ -1,14 +1,14 @@
 {
- "mode": "red",
- "reason": "Good Charlotte - Motel Du Cap EU/UK Tour: crowds arriving, starts 18:30",
+ "mode": "coop",
+ "reason": "Good Charlotte - Motel Du Cap EU/UK Tour: on now",
  "state": {
   "power": 1,
   "rgb": [
-   255,
    0,
-   0
+   255,
+   40
   ],
   "brightness": 40
  },
- "changed": "2026-11-20T16:31:19+00:00"
+ "changed": "2026-11-20T18:31:41+00:00"
 }
