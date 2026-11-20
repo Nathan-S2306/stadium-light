@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-20T14:06:34+00:00",
- "generated_ts": 1795183594,
+ "generated": "2026-11-20T22:15:29+00:00",
+ "generated_ts": 1795212929,
  "events": [
   {
    "name": "Good Charlotte - Motel Du Cap EU/UK Tour",
@@ -443,7 +443,7 @@
    "source": "ticketmaster"
   },
   {
-   "name": "Chase & Status",
+   "name": "Chase and Status",
    "venue": "Co-op Live",
    "type": "concert",
    "start": 1805481000,
