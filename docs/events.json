@@ -1,17 +1,7 @@
 {
- "generated": "2026-11-20T22:15:29+00:00",
- "generated_ts": 1795212929,
+ "generated": "2026-11-21T13:32:03+00:00",
+ "generated_ts": 1795267923,
  "events": [
-  {
-   "name": "Good Charlotte - Motel Du Cap EU/UK Tour",
-   "venue": "Co-op Live",
-   "type": "concert",
-   "start": 1795199400,
-   "end": 1795212000,
-   "start_local": "Fri 20 Nov 18:30",
-   "tbc": false,
-   "source": "ticketmaster"
-  },
   {
    "name": "Man City v Fulham",
    "venue": "Etihad Stadium",
@@ -443,7 +433,7 @@
    "source": "ticketmaster"
   },
   {
-   "name": "Chase and Status",
+   "name": "Chase & Status",
    "venue": "Co-op Live",
    "type": "concert",
    "start": 1805481000,
